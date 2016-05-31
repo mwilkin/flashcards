@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flashcards</title>
+    <meta charset="utf-8">
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="#">Flashcards</a>
+      </nav>
+    </header>
+    <div id="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardJSLink">JavaScript</h3>
+            <div class="content" id="cardJSContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed eros et elit dapibus suscipit. Nam massa elit, gravida vel risus at, consequat semper tortor. Donec posuere vestibulum nibh et elementum. Vestibulum dapibus condimentum tellus, aliquet vulputate leo varius eget. Pellentesque non arcu non nulla lacinia ullamcorper vitae a justo. Praesent magna est, accumsan eu sapien ac, interdum maximus sapien. Donec eu eros quis odio iaculis vulputate vel a massa. In sed blandit nibh, sit amet rutrum ligula. Sed tempus id arcu in ultricies. Donec nisl elit, mollis at ipsum et, volutpat volutpat urna. Vestibulum nisi elit, blandit id magna eu, aliquet dapibus neque.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardOpLink">Operators</h3>
+            <div class="content" id="cardOpContent">Morbi eget nisi id augue feugiat sollicitudin. Etiam quis rutrum nulla, consequat euismod eros. Nullam sodales, lorem vel dictum imperdiet, erat purus efficitur felis, sed auctor magna eros id libero. Nunc et ligula ante. Duis in semper lacus. Sed vitae leo sed lorem mattis aliquam. Fusce sit amet faucibus felis. Curabitur et semper purus, vel eleifend urna. Vivamus sed risus euismod, dapibus tortor lacinia, iaculis sem. Sed in sagittis dui, id lobortis est. Cras lobortis felis vel neque pellentesque aliquet. Proin luctus nunc justo, non eleifend est semper sed. Donec sollicitudin, augue in placerat cursus, quam dolor euismod metus, at blandit lacus augue nec turpis. Duis ultricies tellus nisl, vel tincidunt turpis sagittis sit amet. Integer a lectus interdum, convallis ex non, ultrices ex.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardVarLink">Variables</h3>
+            <div class="content" id="cardVarContent">Etiam sed nulla ut enim tristique blandit. Donec finibus pharetra sapien, auctor interdum ante sagittis eu. Nunc luctus, massa vel rhoncus lobortis, ante neque molestie risus, ullamcorper mattis nulla sem sit amet odio. Praesent posuere lacus ipsum, id consequat enim eleifend et. Nullam viverra dignissim erat sit amet bibendum. Mauris enim est, lacinia in convallis eget, cursus at turpis. Vivamus a euismod tellus.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardconvLink">Variable Naming Convention</h3>
+            <div class="content" id="cardconvContent">Aliquam vitae metus sollicitudin, malesuada urna a, porta tellus. Morbi mollis, libero in auctor faucibus, mi nisl ornare augue, sed posuere lectus lorem at nisi. Aliquam erat volutpat. Vestibulum condimentum augue quis nisi dapibus faucibus. Mauris quis est vitae massa imperdiet dignissim et id nunc. Etiam bibendum tortor ut metus pharetra malesuada. Duis bibendum in quam sed efficitur. Vivamus non augue quam.</div>
+          </div>
+        </div>
+        <!--row 2-->
+        <div class="row">
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardFuncLink">Function</h3>
+            <div class="content" id="cardFuncContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed eros et elit dapibus suscipit. Nam massa elit, gravida vel risus at, consequat semper tortor. Donec posuere vestibulum nibh et elementum. Vestibulum dapibus condimentum tellus, aliquet vulputate leo varius eget. Pellentesque non arcu non nulla lacinia ullamcorper vitae a justo. Praesent magna est, accumsan eu sapien ac, interdum maximus sapien. Donec eu eros quis odio iaculis vulputate vel a massa. In sed blandit nibh, sit amet rutrum ligula. Sed tempus id arcu in ultricies. Donec nisl elit, mollis at ipsum et, volutpat volutpat urna. Vestibulum nisi elit, blandit id magna eu, aliquet dapibus neque.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardMethLink">Methods</h3>
+            <div class="content" id="cardMethContent">Morbi eget nisi id augue feugiat sollicitudin. Etiam quis rutrum nulla, consequat euismod eros. Nullam sodales, lorem vel dictum imperdiet, erat purus efficitur felis, sed auctor magna eros id libero. Nunc et ligula ante. Duis in semper lacus. Sed vitae leo sed lorem mattis aliquam. Fusce sit amet faucibus felis. Curabitur et semper purus, vel eleifend urna. Vivamus sed risus euismod, dapibus tortor lacinia, iaculis sem. Sed in sagittis dui, id lobortis est. Cras lobortis felis vel neque pellentesque aliquet. Proin luctus nunc justo, non eleifend est semper sed. Donec sollicitudin, augue in placerat cursus, quam dolor euismod metus, at blandit lacus augue nec turpis. Duis ultricies tellus nisl, vel tincidunt turpis sagittis sit amet. Integer a lectus interdum, convallis ex non, ultrices ex.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardArgLink">Arguments</h3>
+            <div class="content" id="cardArgContent">Etiam sed nulla ut enim tristique blandit. Donec finibus pharetra sapien, auctor interdum ante sagittis eu. Nunc luctus, massa vel rhoncus lobortis, ante neque molestie risus, ullamcorper mattis nulla sem sit amet odio. Praesent posuere lacus ipsum, id consequat enim eleifend et. Nullam viverra dignissim erat sit amet bibendum. Mauris enim est, lacinia in convallis eget, cursus at turpis. Vivamus a euismod tellus.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardParaLink">Parameters</h3>
+            <div class="content" id="cardParaContent">Aliquam vitae metus sollicitudin, malesuada urna a, porta tellus. Morbi mollis, libero in auctor faucibus, mi nisl ornare augue, sed posuere lectus lorem at nisi. Aliquam erat volutpat. Vestibulum condimentum augue quis nisi dapibus faucibus. Mauris quis est vitae massa imperdiet dignissim et id nunc. Etiam bibendum tortor ut metus pharetra malesuada. Duis bibendum in quam sed efficitur. Vivamus non augue quam.</div>
+          </div>
+        </div>
+<!--row 3-->
+        <div class="row">
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardRetLink">Return</h3>
+            <div class="content" id="cardRetContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed eros et elit dapibus suscipit. Nam massa elit, gravida vel risus at, consequat semper tortor. Donec posuere vestibulum nibh et elementum. Vestibulum dapibus condimentum tellus, aliquet vulputate leo varius eget. Pellentesque non arcu non nulla lacinia ullamcorper vitae a justo. Praesent magna est, accumsan eu sapien ac, interdum maximus sapien. Donec eu eros quis odio iaculis vulputate vel a massa. In sed blandit nibh, sit amet rutrum ligula. Sed tempus id arcu in ultricies. Donec nisl elit, mollis at ipsum et, volutpat volutpat urna. Vestibulum nisi elit, blandit id magna eu, aliquet dapibus neque.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardChainLink">Chaining methods</h3>
+            <div class="content" id="cardChainContent">Morbi eget nisi id augue feugiat sollicitudin. Etiam quis rutrum nulla, consequat euismod eros. Nullam sodales, lorem vel dictum imperdiet, erat purus efficitur felis, sed auctor magna eros id libero. Nunc et ligula ante. Duis in semper lacus. Sed vitae leo sed lorem mattis aliquam. Fusce sit amet faucibus felis. Curabitur et semper purus, vel eleifend urna. Vivamus sed risus euismod, dapibus tortor lacinia, iaculis sem. Sed in sagittis dui, id lobortis est. Cras lobortis felis vel neque pellentesque aliquet. Proin luctus nunc justo, non eleifend est semper sed. Donec sollicitudin, augue in placerat cursus, quam dolor euismod metus, at blandit lacus augue nec turpis. Duis ultricies tellus nisl, vel tincidunt turpis sagittis sit amet. Integer a lectus interdum, convallis ex non, ultrices ex.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardStrLink">Strings</h3>
+            <div class="content" id="cardStrContent">Etiam sed nulla ut enim tristique blandit. Donec finibus pharetra sapien, auctor interdum ante sagittis eu. Nunc luctus, massa vel rhoncus lobortis, ante neque molestie risus, ullamcorper mattis nulla sem sit amet odio. Praesent posuere lacus ipsum, id consequat enim eleifend et. Nullam viverra dignissim erat sit amet bibendum. Mauris enim est, lacinia in convallis eget, cursus at turpis. Vivamus a euismod tellus.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardBooLink">Booleans</h3>
+            <div class="content" id="cardBooContent">Aliquam vitae metus sollicitudin, malesuada urna a, porta tellus. Morbi mollis, libero in auctor faucibus, mi nisl ornare augue, sed posuere lectus lorem at nisi. Aliquam erat volutpat. Vestibulum condimentum augue quis nisi dapibus faucibus. Mauris quis est vitae massa imperdiet dignissim et id nunc. Etiam bibendum tortor ut metus pharetra malesuada. Duis bibendum in quam sed efficitur. Vivamus non augue quam.</div>
+          </div>
+        </div>
+<!--row 4-->
+        <div class="row">
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardUndefLink">Undefined</h3>
+            <div class="content" id="cardUndefContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed eros et elit dapibus suscipit. Nam massa elit, gravida vel risus at, consequat semper tortor. Donec posuere vestibulum nibh et elementum. Vestibulum dapibus condimentum tellus, aliquet vulputate leo varius eget. Pellentesque non arcu non nulla lacinia ullamcorper vitae a justo. Praesent magna est, accumsan eu sapien ac, interdum maximus sapien. Donec eu eros quis odio iaculis vulputate vel a massa. In sed blandit nibh, sit amet rutrum ligula. Sed tempus id arcu in ultricies. Donec nisl elit, mollis at ipsum et, volutpat volutpat urna. Vestibulum nisi elit, blandit id magna eu, aliquet dapibus neque.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardNanLink">Nan</h3>
+            <div class="content" id="cardNanContent">Morbi eget nisi id augue feugiat sollicitudin. Etiam quis rutrum nulla, consequat euismod eros. Nullam sodales, lorem vel dictum imperdiet, erat purus efficitur felis, sed auctor magna eros id libero. Nunc et ligula ante. Duis in semper lacus. Sed vitae leo sed lorem mattis aliquam. Fusce sit amet faucibus felis. Curabitur et semper purus, vel eleifend urna. Vivamus sed risus euismod, dapibus tortor lacinia, iaculis sem. Sed in sagittis dui, id lobortis est. Cras lobortis felis vel neque pellentesque aliquet. Proin luctus nunc justo, non eleifend est semper sed. Donec sollicitudin, augue in placerat cursus, quam dolor euismod metus, at blandit lacus augue nec turpis. Duis ultricies tellus nisl, vel tincidunt turpis sagittis sit amet. Integer a lectus interdum, convallis ex non, ultrices ex.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardEscLink">Escape</h3>
+            <div class="content" id="cardEscContent">Etiam sed nulla ut enim tristique blandit. Donec finibus pharetra sapien, auctor interdum ante sagittis eu. Nunc luctus, massa vel rhoncus lobortis, ante neque molestie risus, ullamcorper mattis nulla sem sit amet odio. Praesent posuere lacus ipsum, id consequat enim eleifend et. Nullam viverra dignissim erat sit amet bibendum. Mauris enim est, lacinia in convallis eget, cursus at turpis. Vivamus a euismod tellus.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardAlertLink">Alert</h3>
+            <div class="content" id="cardAlertContent">Aliquam vitae metus sollicitudin, malesuada urna a, porta tellus. Morbi mollis, libero in auctor faucibus, mi nisl ornare augue, sed posuere lectus lorem at nisi. Aliquam erat volutpat. Vestibulum condimentum augue quis nisi dapibus faucibus. Mauris quis est vitae massa imperdiet dignissim et id nunc. Etiam bibendum tortor ut metus pharetra malesuada. Duis bibendum in quam sed efficitur. Vivamus non augue quam.</div>
+          </div>
+        </div>
+<!-- row 5 -->
+        <div class="row">
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardCommLink">Comments</h3>
+            <div class="content" id="cardCommContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed eros et elit dapibus suscipit. Nam massa elit, gravida vel risus at, consequat semper tortor. Donec posuere vestibulum nibh et elementum. Vestibulum dapibus condimentum tellus, aliquet vulputate leo varius eget. Pellentesque non arcu non nulla lacinia ullamcorper vitae a justo. Praesent magna est, accumsan eu sapien ac, interdum maximus sapien. Donec eu eros quis odio iaculis vulputate vel a massa. In sed blandit nibh, sit amet rutrum ligula. Sed tempus id arcu in ultricies. Donec nisl elit, mollis at ipsum et, volutpat volutpat urna. Vestibulum nisi elit, blandit id magna eu, aliquet dapibus neque.</div>
+          </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardjQuerLink">jQuery</h3>
+            <div class="content" id="cardjQuerContent">Morbi eget nisi id augue feugiat sollicitudin. Etiam quis rutrum nulla, consequat euismod eros. Nullam sodales, lorem vel dictum imperdiet, erat purus efficitur felis, sed auctor magna eros id libero. Nunc et ligula ante. Duis in semper lacus. Sed vitae leo sed lorem mattis aliquam. Fusce sit amet faucibus felis. Curabitur et semper purus, vel eleifend urna. Vivamus sed risus euismod, dapibus tortor lacinia, iaculis sem. Sed in sagittis dui, id lobortis est. Cras lobortis felis vel neque pellentesque aliquet. Proin luctus nunc justo, non eleifend est semper sed. Donec sollicitudin, augue in placerat cursus, quam dolor euismod metus, at blandit lacus augue nec turpis. Duis ultricies tellus nisl, vel tincidunt turpis sagittis sit amet. Integer a lectus interdum, convallis ex non, ultrices ex.</div> </div>
+          <div class="col-md-3 flashcard">
+            <h3 class="clickable" id="cardAttribLink">Attributes</h3>
+            <div class="content" id="cardAttribContent">Etiam sed nulla ut enim tristique blandit. Donec finibus pharetra sapien, auctor interdum ante sagittis eu. Nunc luctus, massa vel rhoncus lobortis, ante neque molestie risus, ullamcorper mattis nulla sem sit amet odio. Praesent posuere lacus ipsum, id consequat enim eleifend et. Nullam viverra dignissim erat sit amet bibendum. Mauris enim est, lacinia in convallis eget, cursus at turpis. Vivamus a euismod tellus.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+    </footer>
+  </body>
+</html>

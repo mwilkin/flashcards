@@ -1,0 +1,11 @@
+#content {
+  margin-top: 50px;
+}
+
+.flashcard {
+  border: 1px solid;
+}
+
+.content {
+  display: none;
+}
